@@ -23,10 +23,12 @@ app.post('/api/recipes', (req, res) => {
     });
 });
 
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
+if (process.env.NODE_ENV === 'production') {
+  const path = require('path');
+  app.get('/*', (req, res) => {
+    res.sendfile(path.resolve(__dirname, '../client', 'build', 'index.html'));
+  });
+}
 const port = process.env.PORT || 3002;
 
 app.listen(port, () => {
