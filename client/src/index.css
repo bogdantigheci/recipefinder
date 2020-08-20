@@ -134,6 +134,12 @@ a {
   font-family: monospace;
 }
 
+.star {
+  cursor: pointer;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
 .navbar-b .dropdown.show .dropdown-menu,
 .navbar-b .dropdown-btn.show .dropdown-menu {
