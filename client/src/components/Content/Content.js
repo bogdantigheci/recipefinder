@@ -4,7 +4,7 @@ import FavoriteRecipesList from './FavoriteRecipesList';
 import { Switch, Route } from 'react-router-dom';
 
 const Content = () => (
-  <div style={{ height: '100vh', textAlign: 'center' }}>
+  <div className="container text-center">
     <Switch>
       <Route exact path="/" component={SearchRecipes} />
       <Route exact path="/favorites" component={FavoriteRecipesList} />

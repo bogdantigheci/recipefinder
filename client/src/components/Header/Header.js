@@ -1,14 +1,12 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { animateScroll as scroll } from 'react-scroll';
 import { Link } from 'react-router-dom';
+import { faUtensils } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 
 const toolbar = (props) => {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
   return (
     <header className="navbar wrap nav_section">
       <nav
@@ -23,12 +21,8 @@ const toolbar = (props) => {
             />
           </div>
           <div className="toolbar__logo">
-            <Link
-              onClick={scrollToTop}
-              to="top"
-              className="navbar-brand js-scroll logo"
-            >
-              Recipe <span className="logo_title"> Finder</span>
+            <Link to="/" className="navbar-brand logo">
+              <FontAwesomeIcon icon={faUtensils} />
             </Link>
           </div>
           <div className="spacer" />

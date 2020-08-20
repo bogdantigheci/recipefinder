@@ -31,7 +31,7 @@ const SearchRecipes = (props) => {
           prefer to prepare with them.
         </p>
       </div>
-      <Form>
+      <Form className="container input-fields">
         <FormGroup>
           <FormLabel className="title-secondary">Ingredients</FormLabel>{' '}
           <FormControl
