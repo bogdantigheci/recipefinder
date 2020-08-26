@@ -4,8 +4,6 @@ import { Link } from 'react-router-dom';
 import { faUtensils } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
-
 const toolbar = (props) => {
   return (
     <header className="navbar wrap nav_section">
@@ -14,12 +12,6 @@ const toolbar = (props) => {
         id="mainNav"
       >
         <div className="container-fluid toolbar">
-          <div className="toolbar__toggle-button">
-            <DrawerToggleButton
-              sideDrawerOpen={props.show}
-              click={props.drawerClickHandler}
-            />
-          </div>
           <div className="toolbar__logo">
             <Link to="/" className="navbar-brand logo">
               <FontAwesomeIcon icon={faUtensils} />
@@ -30,12 +22,7 @@ const toolbar = (props) => {
             <ul className="navbar-nav">
               <li className="nav-item">
                 <Link to="/" className="nav-link">
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/favorites" className="nav-link">
-                  Favorites
+                  Find Your Favorite Recipes
                 </Link>
               </li>
             </ul>

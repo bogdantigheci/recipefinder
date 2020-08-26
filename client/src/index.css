@@ -406,9 +406,6 @@ i {
 }
 
 @media (max-width: 768px) {
-  .toolbar_navigation-items {
-    display: none;
-  }
   .navbar-b .navbar-brand {
     color: #fff;
     font-family: 'Great Vibes', cursive;
